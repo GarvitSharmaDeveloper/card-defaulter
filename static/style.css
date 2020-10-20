@@ -1,0 +1,146 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #000033;
+  background-image: 
+  font-family: 'Oxygen', sans-serif;  
+}
+strong{
+  color: black;
+  
+}
+input{
+  background-color: grey;
+}
+option{
+ background-color: grey; 
+}
+select{
+ background-color: grey; 
+}
+.my-button{
+  background-color: #ffffff;
+   outline: none;
+    border: none;
+}
+/* HEADER */
+.navbar-header {
+  padding: 1%;
+  width: 100%;
+}
+#header-nav {
+  background-color: #ffffff;
+  margin: 20px 2.5% 10px 2.5%;
+  border-radius: 20px;
+
+  border: 0;
+}
+#heading {
+  color: black;
+  text-align: center;
+  padding-left: 30%;
+  font-size: 180%;
+}
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+::placeholder{
+  color:#BBBBBB;
+}
+
+
+
+
+#main-content{
+  position: absolute;
+  border-radius: 20px;
+  margin-top: 10px;
+  width: 95%;
+  height: 140%;
+  background-color: white;
+  transform: translate(2.5%,0);
+}
+
+#box1{
+  float: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 2%;
+  
+}
+#form1{
+  color: black;
+}
+
+#logo {
+
+  min-width: 37px;
+  min-height: 37px;
+  }
+#logo2 {
+
+  min-width: 37px;
+  min-height: 37px;
+  float: right;
+  padding-right: 2%;
+  }
+
+#predict{
+  color: black;
+}
+
+/* END MENU CATEGORIES PAGE */
+
+@media (min-width: 1200px){
+  figure img {
+  width: 40%;
+ }
+  .glyphicon{
+    font-size: 3em;
+  }
+}
+
+/**** Medium devices only ****/
+@media (min-width: 992px)and (max-width: 1199px) {
+
+  figure img {
+  width: 50%;
+ }
+ .glyphicon{
+    font-size: 2.5em;
+  }
+}
+
+/**** Small devices only ****/
+@media (min-width: 768px) and (max-width: 991px) {
+ 
+  
+ .glyphicon{
+    font-size: 2em;
+  }
+}
+
+/**** Extra small devices only ****/
+@media (min-width: 479px) and (max-width: 767px) {
+
+  
+  .glyphicon{
+    font-size: 1.5em;
+  }
+}
+
+
+/**** Super extra small devices Only :-) (e.g., iPhone 4) ****/
+@media (max-width: 478px) {
+ 
+ 
+ .glyphicon{
+    font-size: 1em;
+  }
+}
