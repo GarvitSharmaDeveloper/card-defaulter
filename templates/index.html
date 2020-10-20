@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1><strong>Credit Card Default Prediction</strong></h1>
+        <br>
+        <p><strong>Please fill all the fields below carefully</strong></p>
+        <form action="{{ url_for('predict')}}"method="post">
+            
+                <label>LIMIT BLANACE OF THE ACCOUNT</label>
+                <br>
+                <input type="text" name="experience" placeholder="Experience" required="required" />
+           
+                <label>EDUCTAION QUALIFICATION OF THE ACCOUNT HOLDER</label>
+                <br>
+                <label>(1 = Graduate school; 2 = university; 3 = High school; 4 = Others)</label>
+                <br>
+                <select name="education">
+                    <option value="1">grad</option>
+                    <option value="2">Uni</option>
+                    <option value="3">hschool</option>
+                    <option value="4">others</option>
+                </select>
+            
+            <br>
+
+            
+                <label>MARITAL STATUS</label>
+                <br>
+                <label>(1 = Married; 2 = Single; 3 = Others)</label>
+                <br>
+                <select name="mstat">
+                    <option value="1">married</option>
+                    <option value="2">single</option>
+                    <option value="3">others</option>
+                </select>
+            
+           
+                <label>AGE OF THE ACCOUNT HOLDER</label>
+                <br>
+                <input type="text" value="(In years)" name="Age"> 
+           
+               
+            
+            <br>
+            <p><strong>Please enter the past 6 months Bill Amount details of the account</strong></p> 
+            <br>
+            
+                <label>BILL STATEMENT AMOUNT IN SEPTEMBER</label>
+                <br>
+                <input type="text" value="Enter numerical data" name="Agesdc">
+                <br>
+                <label>BILL STATEMENT AMOUNT IN AUGUST</label>
+                <br>
+                <input type="text" value="Enter numerical data" name="Agefv">
+                <br>
+                <label>BILL STATEMENT AMOUNT IN JULY</label>
+                <br>
+                <input type="text" value="Enter numerical data" name="Agewrf">
+                <br>
+                <label>BILL STATEMENT AMOUNT IN JUNE</label>
+                <br>
+                <input type="text" value="Enter numerical data " name="Agegefvcw">
+                <br>
+                <label>BILL STATEMENT AMOUNT IN MAY</label>
+                <br>
+                <input type="text" value="Enter numerical data" name="Ageiowdhc">
+                <br>
+                <label>BILL STATEMENT AMOUNT IN APRIL</label>
+                <br>
+                <input type="text" value="Enter numerical data" name="Ageefvcw">
+                
+            
+            <br>
+            
+                <label>AMOUNT PAID IN SEPTEMBER</label>
+                <br>
+                <input type="text" value="Enter numerical data" name="Ageefvcs">
+                <br>
+                <label>AMOUNT PAID IN AUGUST</label>
+                <br>
+                <input type="text" value="Enter numerical data" name="Ageoewfhvcj">
+                <br>
+                <label>AMOUNT PAID IN JULY</label>
+                <br>
+                <input type="text" value="Enter numerical data" name="Ageefvtgrvi">
+                <br>
+                <label>AMOUNT PAID IN JUNE</label>
+                <br>
+                <input type="text" value="Enter numerical data" name="Ageevfijnv">
+                <br>
+                <label>AMOUNT PAID IN MAY</label>
+                <br>
+                <input type="text" value="Enter numerical data" name="Agevijeiov">
+                <br>
+                <label>AMOUNT PAID IN APRIL</label>
+                <br>
+                <input type="text" value="Enter numerical data" name="Ageoiwjrcvirev">
+                
+            
+            <br>
+        <!-- 
+        <input type="text" name="experience" placeholder="Experience" required="required" />
+        <input type="text" name="test_score" placeholder="Test Score" required="required" />
+        <input type="text" name="interview_score" placeholder="Interview Score" required="required" />
+        <input type="text" name="fth" placeholder="Experience" required="required" />
+        <input type="text" name="tegdnd" placeholder="Test Score" required="required" />
+        <input type="text" name="intendfrview_score" placeholder="Interview Score" required="required" />
+        <input type="text" name="expesrhrience" placeholder="Experience" required="required" />
+        <input type="text" name="test_skrydscore" placeholder="Test Score" required="required" />
+        <input type="text" name="insrjnsxterview_score" placeholder="Interview Score" required="required" />
+        <input type="text" name="expeutlkrience" placeholder="Experience" required="required" />
+        <input type="text" name="test_sw4twcore" placeholder="Test Score" required="required" />
+        <input type="text" name="interwywhgsview_score" placeholder="Interview Score" required="required" />
+        <input type="text" name="experierwgence" placeholder="Experience" required="required" />
+        <input type="text" name="test_swtr3qcore" placeholder="Test Score" required="required" />
+        <input type="text" name="intervidthbsew_score" placeholder="Interview Score" required="required" />
+        <input type="text" name="experienwtece" placeholder="Experience" required="required" />
+        -->
+         
+
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+           </form>
+        <br>
+        <br>
+        {{prediction_text}}
+    </body>
+</html>

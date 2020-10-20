@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Card Defaulter</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="static/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  </head>
+<body style="background-image: url('static/abstract-futuristic-background_-1.png'); ">
+
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      
+        <div class="navbar-header">
+
+          <!--<a href="index.html" class="pull-left">-->
+            
+            <a  href="index.html" >
+              <img src = "static/restaurant-logo.png"  id="logo"  width="5%">
+            </a>
+          
+          
+           <strong id="heading">Credit Card Default Prediction</strong>
+       
+          <a  href="index.html" >
+              <img src = "static/restaurant-logo.png"  id="logo2"  width="5%">
+            </a>
+        </div>
+
+
+       
+      
+    </nav><!-- #header-nav -->
+  </header>
+    <div id="main-content">
+      <div id="box1">
+        <form action="{{ url_for('predict')}}"method="post">
+            
+                <strong id="form1">LIMIT BLANACE OF THE ACCOUNT</strong>
+                <br>
+                <input type="text" name="experience" placeholder="Experience" required="required" />
+                <br>
+                <br>
+                <strong>EDUCTAION QUALIFICATION OF THE ACCOUNT HOLDER</strong>
+                <br>
+                
+                
+                <select name="education">
+                    <option value="1">Graduate</option>
+                    <option value="2">University</option>
+                    <option value="3">High School</option>
+                    <option value="4">Others</option>
+                </select>
+            
+            <br>
+            <br>
+
+            
+                <strong>MARITAL STATUS</strong>
+                <br>
+                
+                
+                <select name="mstat">
+                    <option value="1">Married</option>
+                    <option value="2">Single</option>
+                    <option value="3">Others</option>
+                </select>
+            
+                <br>
+                <br>
+                <strong>AGE OF THE ACCOUNT HOLDER</strong>
+                <br>
+                <input type="text" placeholder="(In years)" name="Age"> 
+           
+               
+            
+            <br>
+            <br>
+            <br>
+            <p><strong>Please enter the past 6 months Bill Amount details of the account</strong></p> 
+            <br>
+            
+                <strong>BILL STATEMENT AMOUNT IN SEPTEMBER</strong>
+                <br>
+                <input type="text" placeholder="Enter numerical data" name="Agesdc">
+                <br>
+                <strong>BILL STATEMENT AMOUNT IN AUGUST</strong>
+                <br>
+                <input type="text" placeholder="Enter numerical data" name="Agefv">
+                <br>
+                <strong>BILL STATEMENT AMOUNT IN JULY</strong>
+                <br>
+                <input type="text" placeholder="Enter numerical data" name="Agewrf">
+                <br>
+                <strong>BILL STATEMENT AMOUNT IN JUNE</strong>
+                <br>
+                <input type="text" placeholder="Enter numerical data " name="Agegefvcw">
+                <br>
+                <strong>BILL STATEMENT AMOUNT IN MAY</strong>
+                <br>
+                <input type="text" placeholder="Enter numerical data" name="Ageiowdhc">
+                <br>
+                <strong>BILL STATEMENT AMOUNT IN APRIL</strong>
+                <br>
+                <input type="text" placeholder="Enter numerical data" name="Ageefvcw">
+                
+            
+            <br>
+            
+                <strong>AMOUNT PAID IN SEPTEMBER</strong>
+                <br>
+                <input type="text" placeholder="Enter numerical data" name="Ageefvcs">
+                <br>
+                <strong>AMOUNT PAID IN AUGUST</strong>
+                <br>
+                <input type="text" placeholder="Enter numerical data" name="Ageoewfhvcj">
+                <br>
+                <strong>AMOUNT PAID IN JULY</strong>
+                <br>
+                <input type="text" placeholder="Enter numerical data" name="Ageefvtgrvi">
+                <br>
+                <strong>AMOUNT PAID IN JUNE</strong>
+                <br>
+                <input type="text" placeholder="Enter numerical data" name="Ageevfijnv">
+                <br>
+                <strong>AMOUNT PAID IN MAY</strong>
+                <br>
+                <input type="text" placeholder="Enter numerical data" name="Agevijeiov">
+                <br>
+                <strong>AMOUNT PAID IN APRIL</strong>
+                <br>
+                <input type="text" placeholder="Enter numerical data" name="Ageoiwjrcvirev">
+                
+            
+            <br>
+            <br>
+       
+            <div >
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+            </div>
+             <br>
+            <br>
+            <strong id="predict">{{prediction_text}}</strong>
+           </form>
+        
+      </div>
+      
+    </div>
+
+</body>
+</html>
+            
+            
+          
