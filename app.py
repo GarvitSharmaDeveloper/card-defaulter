@@ -9,7 +9,7 @@ model = pickle.load(open('Classifier.pkl', 'rb'))
 def home():
     return render_template('page.htm')
 
-@app.route('/predict',methods=['GET','POST'])
+@app.route('/predict',methods=['POST'])
 def predict():
     
     int_features = [int(x) for x in request.form.values()]
